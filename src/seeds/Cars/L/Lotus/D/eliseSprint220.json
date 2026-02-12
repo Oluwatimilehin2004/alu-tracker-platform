@@ -1,0 +1,28 @@
+{
+  "id": 1,
+  "image": "/images/cars/L/Lotus/elisesprint220.jpg",
+  "class": "D",
+  "brand": "Lotus",
+  "model": "Elise Sprint 220",
+  "rarity": "Rare",
+  "stars": 4,
+  "country": "UK",
+  "epics": 4,
+  "obtainableVia": [
+    "GL05"
+  ],
+  "goldMaxRank": 2390,
+  "goldTopSpeed": 270,
+  "goldAcceleration": 82.25,
+  "goldHandling": 83.47,
+  "goldNitro": 72.71,
+  "added": "Community Update",
+  "addedWith": null,
+  "addedDate": "03/10/2018",
+  "blueprints1Star": 10,
+  "blueprints2Star": 12,
+  "blueprints3Star": 18,
+  "blueprints4Star": 28,
+  "Garage_Lvl": 5,
+  "Tags": "Europe"
+}

@@ -8,9 +8,7 @@
   "stars": 3,
   "country": "UK",
   "epics": 4,
-  "obtainableVia": [
-    "GL03"
-  ],
+  "obtainableVia": ["Garage Level 3"],
   "goldMaxRank": 2123,
   "goldTopSpeed": 317.7,
   "goldAcceleration": 71.7,
@@ -22,11 +20,5 @@
   "blueprints1Star": 20,
   "blueprints2Star": 20,
   "blueprints3Star": 50,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": 3,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": "Europe",
-  "Unnamed: 16": "330,4"
+  "Tags": "Europe"
 }
