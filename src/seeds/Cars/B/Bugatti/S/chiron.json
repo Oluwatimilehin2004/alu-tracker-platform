@@ -1,0 +1,29 @@
+{
+  "id": 8,
+  "image": "/images/cars/B/Bugatti/chiron.jpg",
+  "class": "S",
+  "brand": "Bugatti",
+  "model": "Chiron",
+  "rarity": "Epic",
+  "stars": 6,
+  "country": "France",
+  "epics": 16,
+  "obtainableVia": [
+    "Garage Level 20"
+  ],
+  "goldMaxRank": 4755,
+  "goldTopSpeed": 443.4,
+  "goldAcceleration": 84.4,
+  "goldHandling": 45.62,
+  "goldNitro": 63.63,
+  "added": "Soft Launch",
+  "addedWith": null,
+  "addedDate": "26/02/2018",
+  "blueprints1Star": 60,
+  "blueprints2Star": 13,
+  "blueprints3Star": 16,
+  "blueprints4Star": 25,
+  "blueprints5Star": 38,
+  "blueprints6Star": 48,
+  "Tags": "Europe; Hyper"
+}

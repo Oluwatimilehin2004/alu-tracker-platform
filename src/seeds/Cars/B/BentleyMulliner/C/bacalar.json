@@ -8,7 +8,7 @@
   "stars": 5,
   "country": "UK",
   "epics": 8,
-  "obtainableVia": null,
+  "obtainableVia": ["Garage Level 47", "Drive Syndicate"],
   "goldMaxRank": 3665,
   "goldTopSpeed": 340.4,
   "goldAcceleration": 77.38,
@@ -22,11 +22,5 @@
   "blueprints3Star": 21,
   "blueprints4Star": 28,
   "blueprints5Star": 35,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": 47,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": "Europe",
-  "Unnamed: 16": "354,0"
+  "Tags": "Europe"
 }

@@ -7,12 +7,16 @@
   "normalizedKey": "bmw_z4_lci_e89",
   "status": "in progress",
   "message": "Still adding data I have so far.",
-  "sources": ["MEI"],
+  "sources": [
+    "MEI"
+  ],
   "rarity": "Uncommon",
   "stars": 3,
+  "country": "Germany",
   "epics": 0,
-  "obtainableVia": ["GL01"],
-  "Garage_Lvl": 1,
+  "obtainableVia": [
+    "GL01"
+  ],
   "stockRank": 518,
   "stockTopSpeed": 250,
   "stockAcceleration": 58.6,
@@ -34,11 +38,11 @@
   "goldHandling": 47.43,
   "goldNitro": 57.49,
   "added": "Soft Launch",
-  "Added_with": null,
-  "Added_date": "26/02/2018",
-  "country": "Germany",
-  "Tags": "Europe",
   "blueprints1Star": 5,
   "blueprints2Star": 8,
-  "blueprints3Star": 45
+  "blueprints3Star": 45,
+  "Garage_Lvl": 1,
+  "Added_with": null,
+  "Added_date": "26/02/2018",
+  "Tags": "Europe"
 }

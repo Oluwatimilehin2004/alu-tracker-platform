@@ -1,9 +1,9 @@
 {
-   "id": 1,
-   "image": "/images/cars/B/Bentley/continentalgtspeed.jpg",
+  "id": 1,
+  "image": "/images/cars/B/Bentley/continentalgtspeed.jpg",
   "class": "A",
-   "brand": "Bentley",
-   "model": "Continental GT Speed",
+  "brand": "Bentley",
+  "model": "Continental GT Speed",
   "rarity": "Rare",
   "stars": 4,
   "country": "UK",

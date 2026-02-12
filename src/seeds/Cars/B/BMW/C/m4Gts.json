@@ -6,9 +6,13 @@
   "model": "M4 GTS",
   "rarity": "Uncommon",
   "stars": 3,
-  "goldMaxRank": 2447,
+  "country": "Germany",
   "epics": 4,
-  "obtainableVia": ["Garage Level 6", "Multiplayer"],
+  "obtainableVia": [
+    "Garage Level 6",
+    "Multiplayer"
+  ],
+  "goldMaxRank": 2447,
   "goldTopSpeed": 326.5,
   "goldAcceleration": 73.72,
   "goldHandling": 51.19,
@@ -16,9 +20,8 @@
   "added": "Soft Launch",
   "addedWith": null,
   "addedDate": "26/02/2018",
-  "country": "Germany",
-  "Tags": "Europe",
   "blueprints1Star": 40,
   "blueprints2Star": 20,
-  "blueprints3Star": 50
+  "blueprints3Star": 50,
+  "Tags": "Europe"
 }

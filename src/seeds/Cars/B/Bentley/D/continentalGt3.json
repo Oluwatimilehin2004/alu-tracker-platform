@@ -9,9 +9,7 @@
   "keyCar": true,
   "country": "UK",
   "epics": 4,
-  "obtainableVia": [
-    "Key Hunt"
-  ],
+  "obtainableVia": ["Key Hunt"],
   "goldMaxRank": 2783,
   "goldTopSpeed": 300.8,
   "goldAcceleration": 74.74,
@@ -24,11 +22,5 @@
   "blueprints2Star": 26,
   "blueprints3Star": 38,
   "blueprints4Star": 64,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": null,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": "Europe",
-  "Unnamed: 16": "312,8"
+  "Tags": "Europe"
 }

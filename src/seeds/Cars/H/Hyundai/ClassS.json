@@ -1,9 +1,9 @@
 {
-   "id": 1,
-   "image": "/images/cars/H/Hyundai/nvision74concept.jpg",
+  "id": 1,
+  "image": "/images/cars/H/Hyundai/nvision74concept.jpg",
   "class": "S",
-   "brand": "Hyundai",
-   "model": "N Vision 74 Concept",
+  "brand": "Hyundai",
+  "model": "N Vision 74 Concept",
   "rarity": "Epic",
   "stars": 6,
   "keyCar": true,
@@ -31,6 +31,7 @@
   "fourStarMaxTopSpeed": 398.7,
   "fourStarMaxAcceleration": 73.34,
   "fourStarMaxHandling": 47.72,
+  "fourStarMaxNitro": 46.85,
   "fiveStarMaxRank": 4034,
   "fiveStarMaxTopSpeed": 401.4,
   "fiveStarMaxAcceleration": 74.36,
@@ -51,6 +52,5 @@
   "blueprints3Star": 45,
   "blueprints4Star": 60,
   "blueprints5Star": 70,
-  "blueprints6Star": 85,
-  "Four_Star_Nitro": 46.85
+  "blueprints6Star": 85
 }
