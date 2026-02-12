@@ -1,0 +1,28 @@
+{
+  "id": 2,
+  "image": "/images/cars/B/BMW/i8roadster.jpg",
+  "class": "D",
+  "brand": "BMW",
+  "model": "I8 Roadster",
+  "rarity": "Rare",
+  "stars": 4,
+  "country": "Germany",
+  "epics": 4,
+  "obtainableVia": [
+    "Showroom"
+  ],
+  "goldMaxRank": 2247,
+  "goldTopSpeed": 278.3,
+  "goldAcceleration": 79.72,
+  "goldHandling": 78.61,
+  "goldNitro": 66.88,
+  "added": "Full Throttle",
+  "addedWith": "DS",
+  "addedDate": "10/12/2020",
+  "blueprints1Star": 30,
+  "blueprints2Star": 23,
+  "blueprints3Star": 33,
+  "blueprints4Star": 42,
+  "Garage_Lvl": 23,
+  "Tags": "Europe; Hybrid"
+}

@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "image": "/images/cars/B/Bentley/continentalgtspeed.jpg",
+  "class": "A",
+  "brand": "Bentley",
+  "model": "Continental GT Speed",
+  "rarity": "Rare",
+  "stars": 4,
+  "country": "UK",
+  "epics": 4,
+  "goldMaxRank": 3342,
+  "goldTopSpeed": 348.3,
+  "goldAcceleration": 76.55,
+  "goldHandling": 71.23,
+  "goldNitro": 53.23,
+  "blueprints1Star": 60,
+  "blueprints2Star": 40,
+  "blueprints3Star": 51,
+  "blueprints4Star": 63,
+  "Tags": "Europe"
+}

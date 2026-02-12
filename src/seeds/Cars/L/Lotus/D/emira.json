@@ -1,0 +1,28 @@
+{
+  "id": 2,
+  "image": "/images/cars/L/Lotus/emira.jpg",
+  "class": "D",
+  "brand": "Lotus",
+  "model": "Emira",
+  "rarity": "Rare",
+  "stars": 4,
+  "country": "UK",
+  "epics": 4,
+  "obtainableVia": [
+    "Showroom"
+  ],
+  "goldMaxRank": 2611,
+  "goldTopSpeed": 307.2,
+  "goldAcceleration": 70.87,
+  "goldHandling": 57.45,
+  "goldNitro": 53.42,
+  "added": "British Tour",
+  "addedWith": "Car Hunt",
+  "addedDate": "07/02/2022",
+  "blueprints1Star": 30,
+  "blueprints2Star": 23,
+  "blueprints3Star": 33,
+  "blueprints4Star": 42,
+  "Garage_Lvl": 22,
+  "Tags": "Europe; Super Car"
+}

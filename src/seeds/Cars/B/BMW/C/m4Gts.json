@@ -1,0 +1,27 @@
+{
+  "id": 2,
+  "image": "/images/cars/B/BMW/m4gts.jpg",
+  "class": "C",
+  "brand": "BMW",
+  "model": "M4 GTS",
+  "rarity": "Uncommon",
+  "stars": 3,
+  "country": "Germany",
+  "epics": 4,
+  "obtainableVia": [
+    "Garage Level 6",
+    "Multiplayer"
+  ],
+  "goldMaxRank": 2447,
+  "goldTopSpeed": 326.5,
+  "goldAcceleration": 73.72,
+  "goldHandling": 51.19,
+  "goldNitro": 52.48,
+  "added": "Soft Launch",
+  "addedWith": null,
+  "addedDate": "26/02/2018",
+  "blueprints1Star": 40,
+  "blueprints2Star": 20,
+  "blueprints3Star": 50,
+  "Tags": "Europe"
+}
