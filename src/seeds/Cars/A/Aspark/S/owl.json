@@ -7,14 +7,12 @@
   "normalizedKey": "aspark_owl",
   "status": "in progress",
   "message": "Still adding data I have so far.",
-  "sources": [
-    "MEI"
-  ],
+  "sources": ["MEI"],
   "rarity": "Epic",
   "stars": 6,
   "country": "Japan",
   "epics": 16,
-  "obtainableVia": null,
+  "obtainableVia": ["MEI"],
   "stockRank": 3668,
   "stockTopSpeed": 400,
   "stockAcceleration": 82.99,
@@ -40,8 +38,5 @@
   "blueprints4Star": 38,
   "blueprints5Star": 54,
   "blueprints6Star": 69,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Nitro_TS": null,
   "Tags": "Asia; Electric"
 }

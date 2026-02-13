@@ -8,7 +8,7 @@
   "stars": 6,
   "country": "France",
   "epics": 16,
-  "obtainableVia": null,
+  "obtainableVia": ["Garage Level 33"],
   "goldMaxRank": 4222,
   "goldTopSpeed": 388.7,
   "goldAcceleration": 76.53,
@@ -23,11 +23,5 @@
   "blueprints4Star": 36,
   "blueprints5Star": 52,
   "blueprints6Star": 62,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": 33,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": "Electric; Europe; Super Car",
-  "Unnamed: 16": "404,2"
+  "Tags": "Electric; Europe; Super Car"
 }

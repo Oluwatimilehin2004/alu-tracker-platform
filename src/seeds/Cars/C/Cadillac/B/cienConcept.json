@@ -8,9 +8,7 @@
   "stars": 4,
   "country": "USA",
   "epics": 8,
-  "obtainableVia": [
-    "Exclusive"
-  ],
+  "obtainableVia": ["Exclusive"],
   "goldMaxRank": 3155,
   "goldTopSpeed": 368,
   "goldAcceleration": 76.55,
@@ -23,11 +21,5 @@
   "blueprints2Star": 18,
   "blueprints3Star": 22,
   "blueprints4Star": 36,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": null,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": "Super Car",
-  "Unnamed: 16": "382,7"
+  "Tags": "Super Car"
 }

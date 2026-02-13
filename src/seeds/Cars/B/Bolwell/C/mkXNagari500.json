@@ -8,9 +8,7 @@
   "stars": 4,
   "country": "Australia",
   "epics": 4,
-  "obtainableVia": [
-    "Showroom"
-  ],
+  "obtainableVia": ["Garage Level 43", "Showroom"],
   "goldMaxRank": 2857,
   "goldTopSpeed": 314.6,
   "goldAcceleration": 81.62,
@@ -23,11 +21,5 @@
   "blueprints2Star": 29,
   "blueprints3Star": 38,
   "blueprints4Star": 48,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": 43,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": "Super Car",
-  "Unnamed: 16": "327,2"
+  "Tags": "Super Car"
 }

@@ -8,7 +8,7 @@
   "stars": 5,
   "country": "USA",
   "epics": 12,
-  "obtainableVia": null,
+  "obtainableVia": [],
   "goldMaxRank": 3876,
   "goldTopSpeed": 355.4,
   "goldAcceleration": 82.03,
@@ -21,12 +21,5 @@
   "blueprints2Star": 23,
   "blueprints3Star": 27,
   "blueprints4Star": 36,
-  "blueprints5Star": 51,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": null,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": null,
-  "Unnamed: 16": "369,6"
+  "blueprints5Star": 51
 }

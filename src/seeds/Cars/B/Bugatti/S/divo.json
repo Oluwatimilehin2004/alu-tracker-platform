@@ -8,7 +8,7 @@
   "stars": 6,
   "country": "France",
   "epics": 16,
-  "obtainableVia": null,
+  "obtainableVia": ["Special Events"],
   "goldMaxRank": 4773,
   "goldTopSpeed": 396,
   "goldAcceleration": 85.7,
