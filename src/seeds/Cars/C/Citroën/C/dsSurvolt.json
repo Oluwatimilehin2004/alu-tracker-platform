@@ -1,9 +1,9 @@
 {
-   "id": 1,
-   "image": "/images/cars/C/Citroën/dssurvolt.jpg",
+  "id": 1,
+  "image": "/images/cars/C/Citroën/dssurvolt.jpg",
   "class": "C",
-   "brand": "Citroën",
-   "model": "DS Survolt",
+  "brand": "Citroën",
+  "model": "DS Survolt",
   "rarity": "Rare",
   "stars": 4,
   "country": "France",
