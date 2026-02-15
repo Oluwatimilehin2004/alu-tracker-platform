@@ -1,29 +1,44 @@
 {
-  "oneStarMaxRank": 2484,
-  "oneStarMaxTopSpeed": 352.4,
-  "oneStarMaxAcceleration": 73.91,
-  "oneStarMaxHandling": 47.53,
-  "oneStarMaxNitro": 45.3,
-  "twoStarMaxRank": 2778,
-  "twoStarMaxTopSpeed": 355.2,
-  "twoStarMaxAcceleration": 74.92,
-  "twoStarMaxHandling": 49.99,
-  "twoStarMaxNitro": 48.58,
-  "threeStarMaxRank": 3075,
-  "threeStarMaxTopSpeed": 357.8,
-  "threeStarMaxAcceleration": 76.1,
-  "threeStarMaxHandling": 52.85,
-  "threeStarMaxNitro": 51.59,
-  "fourStarMaxRank": 3482,
-  "fourStarMaxTopSpeed": 361.7,
-  "fourStarMaxAcceleration": 77.56,
-  "fourStarMaxHandling": 56.4,
-  "fourStarMaxNitro": 56.01,
-  "fiveStarMaxRank": 3944,
-  "fiveStarMaxTopSpeed": 365.5,
-  "fiveStarMaxAcceleration": 79.61,
-  "fiveStarMaxHandling": 61.34,
-  "fiveStarMaxNitro": 60.32,
-  "sixStarMaxRank": 4006,
-  "sixStarMaxTopSpeed": 365.7
+  "oneStar": {
+    "rank": 2484,
+    "topSpeed": 352.4,
+    "acceleration": 73.91,
+    "handling": 47.53,
+    "nitro": 45.3
+  },
+  "twoStar": {
+    "rank": 2778,
+    "topSpeed": 355.2,
+    "acceleration": 74.92,
+    "handling": 49.99,
+    "nitro": 48.58
+  },
+  "threeStar": {
+    "rank": 3075,
+    "topSpeed": 357.8,
+    "acceleration": 76.1,
+    "handling": 52.85,
+    "nitro": 51.59
+  },
+  "fourStar": {
+    "rank": 3482,
+    "topSpeed": 361.7,
+    "acceleration": 77.56,
+    "handling": 56.4,
+    "nitro": 56.01
+  },
+  "fiveStar": {
+    "rank": 3944,
+    "topSpeed": 365.5,
+    "acceleration": 79.61,
+    "handling": 61.34,
+    "nitro": 60.32
+  },
+  "sixStar": {
+    "rank": 4006,
+    "topSpeed": 365.7,
+    "acceleration": 80.06,
+    "handling": 62.41,
+    "nitro": 60.55
+  }
 }

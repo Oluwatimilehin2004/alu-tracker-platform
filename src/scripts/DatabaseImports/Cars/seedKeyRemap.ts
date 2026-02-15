@@ -1,4 +1,5 @@
 import type { SeedCar } from "@/types/scripts/seedTypes";
+import { isV2Seed } from "@/scripts/DatabaseImports/Cars/seedV2";
 
 type AnyObj = Record<string, unknown>;
 
@@ -70,6 +71,12 @@ const NEW_KEYS = new Set<string>([
   "message",
   "sources",
   "tags",
+
+  // V2 structured keys (added; does not break V1)
+  "stock",
+  "gold",
+  "maxStar",
+  "stages",
 ]);
 
 const LEGACY_TO_CAMEL: Record<string, string> = {
@@ -153,6 +160,10 @@ const LEGACY_TO_CAMEL: Record<string, string> = {
 };
 
 export function isLikelyNewFormat(doc: AnyObj): boolean {
+  // V2 structured doc? treat as new format (overwrite semantics)
+  if (isV2Seed(doc)) return true;
+
+  // Existing logic: any canonical key present implies "new-ish" seed
   for (const k of Object.keys(doc)) {
     if (NEW_KEYS.has(k)) return true;
   }

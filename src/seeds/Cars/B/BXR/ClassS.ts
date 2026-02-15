@@ -1,3 +1,3 @@
-import baileyBladeGt1 from '@/seeds/Cars/B/BXR/S/baileyBladeGt1.json';
+import baileyBladeGt1 from '@/seeds/Cars/B/BXR/S/BaileyBladeGT1';
 
 export default [baileyBladeGt1]
