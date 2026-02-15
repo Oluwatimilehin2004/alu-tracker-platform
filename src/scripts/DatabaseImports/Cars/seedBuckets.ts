@@ -4,6 +4,7 @@ import type { CarDoc, SeedCar, StatusDoc } from "@/types/scripts/seedTypes";
 import { generateCarKey, cleanStatus } from "@/types/scripts/seedTypes";
 import { loadCarsFromFile, SeedCarWithMeta } from "./seedLoadCars";
 import { resolveImagePath } from "@/scripts/DatabaseImports/Images/seedImages";
+import { applyV2LegacyKeys } from "@/scripts/DatabaseImports/Cars/seedV2";
 
 type BrandBucket = {
   docs: CarDoc[];
@@ -171,16 +172,13 @@ export async function applyBuckets(
     const newKeys = bucket.keys;
 
     if (!opts.disablePrune) {
-      // Canonical-only prune: query canonical "brand"
       const snap = await adminDb.collection("cars").where("brand", "==", brand).get();
 
       const deleteBatch = adminDb.batch();
       let deleteCount = 0;
 
       for (const docSnap of snap.docs) {
-        const nk =
-          (docSnap.get("normalizedKey") as string | undefined) ||
-          docSnap.id; // your docs are keyed by normalizedKey anyway
+        const nk = (docSnap.get("normalizedKey") as string | undefined) || docSnap.id;
 
         if (!nk || !newKeys.has(nk)) {
           deleteBatch.delete(docSnap.ref);
@@ -205,11 +203,15 @@ export async function applyBuckets(
       const imagePath = typeof doc.image === "string" ? doc.image : undefined;
       const resolvedImage = resolveImagePath(imagePath);
 
-      const toWrite: CarDoc = {
+      let toWrite: CarDoc = {
         ...doc,
         image: resolvedImage ?? imagePath ?? "",
       };
 
+      // Additive V2 logic: if doc contains V2 structured stats, emit legacy flat stat keys too.
+      toWrite = applyV2LegacyKeys(toWrite) as CarDoc;
+
+      // Critical: overwrite only when this seed is marked new format (or force flag is set)
       const overwrite = forceOverwrite || bucket._overwriteByKey.get(doc.normalizedKey) === true;
       batch.set(ref, toWrite, { merge: !overwrite });
 
