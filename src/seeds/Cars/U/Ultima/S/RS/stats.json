@@ -33,10 +33,5 @@
   "sixStarMaxTopSpeed": 415.4,
   "sixStarMaxAcceleration": 80.38,
   "sixStarMaxHandling": 61.18,
-  "sixStarMaxNitro": 60.36,
-  "goldMaxRank": 4644,
-  "goldTopSpeed": 418.2,
-  "goldAcceleration": 81.38,
-  "goldHandling": 63.54,
-  "goldNitro": 63.24
+  "sixStarMaxNitro": 60.36
 }
