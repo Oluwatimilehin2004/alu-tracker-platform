@@ -1,15 +1,13 @@
 {
-   "id": 1,
-   "image": "/images/cars/M/Mitsubishi/lancerevolution.jpg",
+  "id": 1,
+  "image": "/images/cars/M/Mitsubishi/lancerevolution.jpg",
   "class": "D",
-   "brand": "Mitsubishi",
-   "model": "Lancer Evolution",
+  "brand": "Mitsubishi",
+  "model": "Lancer Evolution",
   "normalizedKey": "mitsubishi_lancer_evolution",
   "status": "in progress",
   "message": "(temporarily) Completed until I can new tables and data",
-  "sources": [
-    "MEI"
-  ],
+  "sources": ["MEI"],
   "rarity": "Uncommon",
   "stars": 3,
   "country": "Japan",
