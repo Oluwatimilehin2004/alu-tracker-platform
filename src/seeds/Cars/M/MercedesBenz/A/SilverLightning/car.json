@@ -7,11 +7,15 @@
   "normalizedKey": "mercedes_benz_silver_lightning",
   "status": "in progress",
   "message": "Still adding data",
+  "sources": ["Asphalt Fandom Wiki", "My own in game research"],
   "rarity": "Epic",
   "stars": 6,
   "country": "Germany",
   "obtainableVia": ["Drive Syndicate"],
   "blueprints1Star": 30,
   "blueprints2Star": 35,
-  "blueprints3Star": 40
+  "blueprints3Star": 40,
+  "blueprints4Star": 45,
+  "blueprints5Star": 55,
+  "blueprints6Star": 65
 }
