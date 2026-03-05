@@ -6,6 +6,7 @@
   "scripts": {
     "start": "ts-node -r tsconfig-paths/register src/server.ts",
     "dev": "ts-node -r tsconfig-paths/register src/server.ts",
+
     "seed:cars": "ts-node -r tsconfig-paths/register src/scripts/DatabaseImports/importCars.ts",
     "seed:cars:selected": "ts-node -r tsconfig-paths/register src/scripts/DatabaseImports/importCarsSelected.ts",
 
@@ -27,9 +28,13 @@
     "legacy:one": "ts-node -r tsconfig-paths/register src/scripts/maintenance/legacyToNested.ts",
     "legacy:scan": "ts-node -r tsconfig-paths/register src/scripts/maintenance/legacyToNested.ts",
     "legacy:scan:dry": "ts-node -r tsconfig-paths/register src/scripts/maintenance/legacyToNested.ts --dry",
-    
+
     "seed:icons": "ts-node -r tsconfig-paths/register src/scripts/DatabaseImports/importIcons.ts",
     "seed:logos": "ts-node -r tsconfig-paths/register src/scripts/DatabaseImports/importLogos.ts",
+
+    "progress:cars": "ts-node -r tsconfig-paths/register src/scripts/carConversionProgress.ts",
+    "progress:cars:list": "ts-node -r tsconfig-paths/register src/scripts/carConversionProgress.ts --legacy",
+
     "ping:firebase": "ts-node -r tsconfig-paths/register src/scripts/pingFirestore.ts",
     "seed:diagnose": "ts-node -r tsconfig-paths/register src/scripts/Diagnosing/diagnoseCarSet.ts",
     "seed:backfill": "cross-env INCLUDE_PER_CAR_WITH_COLLECTOR=1 INCLUDE_CLASS_JSON_WITH_COLLECTOR=1 ts-node -r tsconfig-paths/register src/scripts/DatabaseImports/importCars.ts",
@@ -38,9 +43,9 @@
     "compare:seeds-db": "ts-node -r tsconfig-paths/register src/scripts/Diagnosing/compareSeedsToDb.ts",
     "clean:content": "ts-node -r tsconfig-paths/register src/scripts/maintenance/cleanContent.ts",
     "clean:content:allow": "cross-env ALLOW_CONTENT_DROP=1 ts-node -r tsconfig-paths/register src/scripts/maintenance/cleanContent.ts",
+
     "ts": "ts-node",
     "build": "tsc",
-    "start:watch": "nodemon --exec ts-node -r tsconfig-paths/register src/server.ts",
     "start:dev": "npm run start:watch"
   },
   "author": "Justin Hebenstreit",

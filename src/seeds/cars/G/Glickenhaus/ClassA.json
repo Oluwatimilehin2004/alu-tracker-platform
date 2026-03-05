@@ -10,11 +10,6 @@
   "country": "USA",
   "epics": 16,
   "obtainableVia": null,
-  "goldMaxRank": 4187,
-  "goldTopSpeed": 358.6,
-  "goldAcceleration": 89.33,
-  "goldHandling": 82.63,
-  "goldNitro": 55.24,
   "added": "Festive Season",
   "addedWith": "GP",
   "addedDate": "16/12/2021",
@@ -24,10 +19,13 @@
   "blueprints4Star": 44,
   "blueprints5Star": 59,
   "blueprints6Star": 86,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": null,
-  "Unnamed: 16": "372,9"
+  "gold": {
+    "gold": {
+      "rank": 4187,
+      "topSpeed": 358.6,
+      "acceleration": 89.33,
+      "handling": 82.63,
+      "nitro": 55.24
+    }
+  }
 }

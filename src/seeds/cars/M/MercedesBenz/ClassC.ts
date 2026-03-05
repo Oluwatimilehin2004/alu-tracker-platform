@@ -1,4 +1,4 @@
-import amgGtS from '@/seeds/cars/M/MercedesBenz/C/amgGtS.json';
+import amgGtS from '@/seeds/cars/M/MercedesBenz/C/AmgGtS';
 import twentyTwentyTwoShowcarVisionAmg from '@/seeds/cars/M/MercedesBenz/C/2022ShowcarVisionAmg';
 import clkGtr from '@/seeds/cars/M/MercedesBenz/C/ClkGtr';
 import amgGtBlackSeries from '@/seeds/cars/M/MercedesBenz/C/AmgGtBlackSeries';

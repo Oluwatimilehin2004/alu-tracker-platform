@@ -1,3 +1,3 @@
-import drakuma from '@/seeds/cars/A/Ajlani/S/drakuma.json';
+import drakuma from '@/seeds/cars/A/Ajlani/S/Drakuma';
 
 export default [drakuma];

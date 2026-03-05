@@ -1,6 +1,6 @@
-import car from '@/seeds/cars/K/Koenigsegg/S/CCXR/car.json';
-import stats from '@/seeds/cars/K/Koenigsegg/S/CCXR/stats';
-import upgrades from '@/seeds/cars/K/Koenigsegg/S/CCXR/upgrades';
-import deltas from '@/seeds/cars/K/Koenigsegg/S/CCXR/deltas';
+import car from '@/seeds/cars/M/MercedesBenz/C/AmgGtBlackSeries/car.json';
+import stats from '@/seeds/cars/M/MercedesBenz/C/AmgGtBlackSeries/stats';
+import upgrades from '@/seeds/cars/M/MercedesBenz/C/AmgGtBlackSeries/upgrades';
+import deltas from '@/seeds/cars/M/MercedesBenz/C/AmgGtBlackSeries/deltas';
 
 export default {...car, ...stats, ...upgrades, ...deltas};

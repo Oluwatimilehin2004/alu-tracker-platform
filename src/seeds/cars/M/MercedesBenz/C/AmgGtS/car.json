@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "image": "/images/cars/M/MercedesBenz/amggts.jpg",
+  "class": "C",
+  "brand": "Mercedes-Benz",
+  "model": "AMG GT S",
+  "normalizedKey": "mercedes_benz_amg_gt_s",
+  "status": "in progress",
+  "message": "Still adding data",
+  "rarity": "Uncommon",
+  "stars": 3,
+  "country": "Germany",
+  "epics": 4,
+  "obtainableVia": ["Garage Level 4"],
+  "added": "Soft Launch",
+  "addedWith": null,
+  "addedDate": "26/02/2018",
+  "blueprints1Star": 30,
+  "blueprints2Star": 20,
+  "blueprints3Star": 50,
+  "Tags": "Europe"
+}

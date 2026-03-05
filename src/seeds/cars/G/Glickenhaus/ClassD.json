@@ -12,11 +12,6 @@
   "obtainableVia": [
     "Key Hunt"
   ],
-  "goldMaxRank": 3075,
-  "goldTopSpeed": 311.2,
-  "goldAcceleration": 76.75,
-  "goldHandling": 56.89,
-  "goldNitro": 60.87,
   "added": "Around the World",
   "addedWith": "GP",
   "addedDate": "03/04/2022",
@@ -25,11 +20,13 @@
   "blueprints3Star": 30,
   "blueprints4Star": 35,
   "blueprints5Star": 38,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": null,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": null,
-  "Unnamed: 16": "323,6"
+  "gold": {
+    "gold": {
+      "rank": 3075,
+      "topSpeed": 311.2,
+      "acceleration": 76.75,
+      "handling": 56.89,
+      "nitro": 60.87
+    }
+  }
 }

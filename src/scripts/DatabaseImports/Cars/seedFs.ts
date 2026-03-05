@@ -20,18 +20,18 @@ export const isTsCollector = (f: string): boolean => /[/\\]Class[A-Z]\.ts$/i.tes
  * src/seeds/cars/<Letter>/<Brand>/<Class>/<CarFolder>/index.ts
  */
 export const isCarFolderIndexTs = (f: string): boolean =>
-  /[/\\]Cars[/\\][^/\\]+[/\\][^/\\]+[/\\][A-DS][/\\][^/\\]+[/\\]index\.ts$/i.test(f);
+  /[/\\]cars[/\\][^/\\]+[/\\][^/\\]+[/\\][A-DS][/\\][^/\\]+[/\\]index\.ts$/i.test(f);
 
 /**
  * Split parts that should NOT be treated as standalone car docs:
  * src/seeds/cars/<Letter>/<Brand>/<Class>/<CarFolder>/(car|stats).json
  */
 export const isSplitPartJson = (f: string): boolean =>
-  /[/\\]Cars[/\\][^/\\]+[/\\][^/\\]+[/\\][A-DS][/\\][^/\\]+[/\\](car|stats)\.json$/i.test(f);
+  /[/\\]cars[/\\][^/\\]+[/\\][^/\\]+[/\\][A-DS][/\\][^/\\]+[/\\](car|stats)\.json$/i.test(f);
 
 export function parseBrandAndClass(file: string): { brand?: string; klass?: string } {
   const parts = file.split(path.sep);
-  const i = parts.lastIndexOf("Cars");
+  const i = parts.lastIndexOf("cars");
   if (i < 0) return {};
 
   // src/seeds/cars/<Letter>/<Brand>/.../file
