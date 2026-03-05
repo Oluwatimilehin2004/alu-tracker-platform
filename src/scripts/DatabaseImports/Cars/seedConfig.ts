@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs";
 
-export const ROOT_DIR = path.resolve(process.cwd(), "src/seeds/Cars");
+export const ROOT_DIR = path.resolve(process.cwd(), "src/seeds/cars");
 export const PUBLIC_DIR = path.resolve(process.cwd(), "public");
 
 export const USE_FIREBASE_STORAGE_IMAGES =

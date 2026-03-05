@@ -3,7 +3,7 @@ import path from "node:path";
 
 import { SEED_CAR_KEY_ORDER } from "@/scripts/DatabaseImports/Cars/seedKeyOrder";
 
-const ROOT = path.resolve(process.cwd(), "src/seeds/Cars");
+const ROOT = path.resolve(process.cwd(), "src/seeds/cars");
 const APPLY = process.argv.includes("--apply");
 
 const REPORT_DIR = path.resolve(process.cwd(), "exports");

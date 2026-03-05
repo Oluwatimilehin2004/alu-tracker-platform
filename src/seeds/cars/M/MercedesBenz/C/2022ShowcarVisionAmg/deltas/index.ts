@@ -1,4 +1,4 @@
-import importDeltas from "@/seeds/cars/K/Koenigsegg/S/CCXR/deltas/imports";
-import stageDeltas from "@/seeds/cars/K/Koenigsegg/S/CCXR/deltas/stages";
+import importDeltas from "@/seeds/cars/M/MercedesBenz/C/2022ShowcarVisionAmg/deltas/imports";
+import stageDeltas from "@/seeds/cars/M/MercedesBenz/C/2022ShowcarVisionAmg/deltas/stages";
 
 export default { ...importDeltas, ...stageDeltas };
