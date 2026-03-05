@@ -8,9 +8,7 @@
   "stars": 4,
   "country": "UK",
   "epics": 4,
-  "obtainableVia": [
-    "GL04 / Multiplayer"
-  ],
+  "obtainableVia": ["Garage Level 4", "Multiplayer"],
   "goldMaxRank": 2646,
   "goldTopSpeed": 290.7,
   "goldAcceleration": 71.51,
@@ -23,11 +21,6 @@
   "blueprints2Star": 23,
   "blueprints3Star": 33,
   "blueprints4Star": 42,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": 4,
-  "Nitro_TS": null,
   "Perfect_Nitro_TS": null,
-  "Tags": "Europe",
-  "Unnamed: 16": "302,3"
+  "Tags": "Europe"
 }

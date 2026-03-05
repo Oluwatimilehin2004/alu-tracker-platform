@@ -1,9 +1,9 @@
 {
-   "id": 1,
-   "image": "/images/cars/F/FormulaE/gen3evochampionshipedition.jpg",
+  "id": 1,
+  "image": "/images/cars/F/FormulaE/gen3evochampionshipedition.jpg",
   "class": "B",
-   "brand": "Formula E",
-   "model": "Gen 3 Evo Championship Edition",
+  "brand": "Formula E",
+  "model": "Gen 3 Evo Championship Edition",
   "rarity": "Epic",
   "stars": 5,
   "keyCar": true,

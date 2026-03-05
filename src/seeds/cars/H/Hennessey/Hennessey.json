@@ -8,9 +8,7 @@
   "stars": 6,
   "country": "USA",
   "epics": 16,
-  "obtainableVia": [
-    "Multiplayer"
-  ],
+  "obtainableVia": ["Multiplayer"],
   "goldMaxRank": 5114,
   "goldTopSpeed": 512.3,
   "goldAcceleration": 80.66,
@@ -24,12 +22,5 @@
   "blueprints3Star": 29,
   "blueprints4Star": 38,
   "blueprints5Star": 54,
-  "blueprints6Star": 69,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": null,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": null,
-  "Unnamed: 16": "532,8"
+  "blueprints6Star": 69
 }

@@ -8,9 +8,7 @@
   "stars": 4,
   "country": "Japan",
   "epics": 4,
-  "obtainableVia": [
-    "Showroom"
-  ],
+  "obtainableVia": ["Showroom"],
   "goldMaxRank": 2698,
   "goldTopSpeed": 285.3,
   "goldAcceleration": 82.09,
@@ -22,12 +20,5 @@
   "blueprints1Star": 30,
   "blueprints2Star": 23,
   "blueprints3Star": 33,
-  "blueprints4Star": 42,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": null,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": "Asia",
-  "Unnamed: 16": "296,7"
+  "blueprints4Star": 42
 }

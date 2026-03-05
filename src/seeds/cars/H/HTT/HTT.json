@@ -1,9 +1,9 @@
 {
-   "id": 1,
-   "image": "/images/cars/H/HTT/locusplethorelc750.jpg",
+  "id": 1,
+  "image": "/images/cars/H/HTT/locusplethorelc750.jpg",
   "class": "S",
-   "brand": "HTT",
-   "model": "Locus Pléthore LC750",
+  "brand": "HTT",
+  "model": "Locus Pléthore LC750",
   "rarity": "Epic",
   "stars": 6,
   "epics": 16,

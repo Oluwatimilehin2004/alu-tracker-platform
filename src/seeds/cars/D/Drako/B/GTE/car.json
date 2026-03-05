@@ -4,18 +4,14 @@
   "class": "B",
   "brand": "Drako",
   "model": "GTE",
+  "normalizedKey": "drako_gte",
+  "status": "in progress",
+  "message": "Still adding data",
   "rarity": "Rare",
   "stars": 4,
   "country": "USA",
   "epics": 8,
-  "obtainableVia": [
-    "Car Hunt"
-  ],
-  "goldMaxRank": 3425,
-  "goldTopSpeed": 346.2,
-  "goldAcceleration": 81.85,
-  "goldHandling": 47.31,
-  "goldNitro": 61.18,
+  "obtainableVia": ["Car Hunt"],
   "added": "Electric Season",
   "addedWith": "Car Hunt",
   "addedDate": "23/09/2021",
@@ -23,11 +19,5 @@
   "blueprints2Star": 12,
   "blueprints3Star": 22,
   "blueprints4Star": 36,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": 25,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": "Electric; Super Car",
-  "Unnamed: 16": "360,0"
+  "Tags": "Electric; Super Car"
 }
