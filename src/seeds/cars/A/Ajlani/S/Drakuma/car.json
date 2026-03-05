@@ -21,16 +21,5 @@
   "blueprints3Star": 29,
   "blueprints4Star": 38,
   "blueprints5Star": 54,
-  "blueprints6Star": 69,
-  "stock": {},
-  "gold": {
-    "gold": {
-      "rank": 4702,
-      "topSpeed": 441,
-      "acceleration": 81.56,
-      "handling": 47.91,
-      "nitro": 60.58
-    }
-  },
-  "maxStar": {}
+  "blueprints6Star": 69
 }
