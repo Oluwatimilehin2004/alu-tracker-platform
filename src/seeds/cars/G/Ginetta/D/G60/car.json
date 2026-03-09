@@ -4,14 +4,14 @@
   "class": "D",
   "brand": "Ginetta",
   "model": "G60",
+  "normalizedKey": "ginetta_g60",
+  "status": "in progress",
+  "message": "Still adding data",
   "rarity": "Rare",
   "stars": 4,
   "country": "UK",
   "epics": 4,
-  "obtainableVia": [
-    "Garage Level 4",
-    "Multiplayer"
-  ],
+  "obtainableVia": ["Garage Level 4", "Multiplayer"],
   "added": "Summer",
   "addedWith": "DS",
   "addedDate": "18/06/2019",
@@ -19,15 +19,5 @@
   "blueprints2Star": 23,
   "blueprints3Star": 33,
   "blueprints4Star": 42,
-  "Perfect_Nitro_TS": null,
-  "Tags": "Europe",
-  "gold": {
-    "gold": {
-      "rank": 2646,
-      "topSpeed": 290.7,
-      "acceleration": 71.51,
-      "handling": 74.81,
-      "nitro": 62.66
-    }
-  }
+  "Tags": "Europe"
 }
