@@ -4,14 +4,15 @@
   "class": "D",
   "brand": "Glickenhaus",
   "model": "004C",
+  "normalizedKey": "glickenhaus_004c",
+  "status": "in progress",
+  "message": "Still adding data",
   "rarity": "Epic",
   "stars": 5,
   "keyCar": true,
   "country": "USA",
   "epics": 8,
-  "obtainableVia": [
-    "Key Hunt"
-  ],
+  "obtainableVia": ["Key Hunt"],
   "added": "Around the World",
   "addedWith": "GP",
   "addedDate": "03/04/2022",
@@ -19,14 +20,5 @@
   "blueprints2Star": 22,
   "blueprints3Star": 30,
   "blueprints4Star": 35,
-  "blueprints5Star": 38,
-  "gold": {
-    "gold": {
-      "rank": 3075,
-      "topSpeed": 311.2,
-      "acceleration": 76.75,
-      "handling": 56.89,
-      "nitro": 60.87
-    }
-  }
+  "blueprints5Star": 38
 }
