@@ -8,7 +8,7 @@
   "stars": 6,
   "country": "France",
   "epics": 16,
-  "obtainableVia": null,
+  "obtainableVia": ["Garage Level 37"],
   "added": "New Breed Rivals",
   "addedWith": "MP2",
   "addedDate": "04/04/2022",
@@ -18,13 +18,7 @@
   "blueprints4Star": 38,
   "blueprints5Star": 54,
   "blueprints6Star": 69,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": 37,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
   "Tags": "Electric; Europe",
-  "Unnamed: 16": "405,8",
   "gold": {
     "gold": {
       "rank": 4435,

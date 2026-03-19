@@ -8,9 +8,7 @@
   "stars": 5,
   "country": "Czech Republic",
   "epics": 4,
-  "obtainableVia": [
-    "Multiplayer"
-  ],
+  "obtainableVia": ["Multiplayer"],
   "added": "Winterfest",
   "addedWith": "DS",
   "addedDate": "12/12/2022",
