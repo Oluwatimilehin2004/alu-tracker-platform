@@ -2,7 +2,7 @@
     "brand": "BMW",
     "slug": "bmw",
     "description": "Bayerische Motoren Werke AG (BMW) is a German multinational corporation known for producing luxury vehicles and motorcycles. Founded in 1916 as a manufacturer of aircraft engines, BMW transitioned into automotive manufacturing and became one of the most respected names in the automotive industry. BMW is headquartered in Munich, Germany.",
-    "logo": "/Images/Logos/B/BMW/bmw-logo.png",
+    "logo": "/images/logos/B/bmw.png",
     "country": ["Germany"],
     "established": 1916,
     "headquarters": "Munich, Germany",
