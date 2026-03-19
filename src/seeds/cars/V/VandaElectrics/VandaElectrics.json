@@ -8,9 +8,7 @@
   "stars": 6,
   "country": "Singapore",
   "epics": 16,
-  "obtainableVia": [
-    "GL16"
-  ],
+  "obtainableVia": ["Garage Level 17"],
   "added": "King of the Fall",
   "addedWith": null,
   "addedDate": "15/10/2019",
@@ -20,13 +18,7 @@
   "blueprints4Star": 36,
   "blueprints5Star": 52,
   "blueprints6Star": 62,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": 17,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": "363,0",
   "Tags": "Electric; Europe",
-  "Unnamed: 16": "353,5",
   "gold": {
     "gold": {
       "rank": 4099,

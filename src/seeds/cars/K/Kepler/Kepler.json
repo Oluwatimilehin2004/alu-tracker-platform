@@ -8,7 +8,7 @@
   "stars": 4,
   "country": "USA",
   "epics": 8,
-  "obtainableVia": null,
+  "obtainableVia": [],
   "added": "European Season (2023)",
   "addedWith": null,
   "addedDate": "30/03/2023",
@@ -16,13 +16,6 @@
   "blueprints2Star": 35,
   "blueprints3Star": 44,
   "blueprints4Star": 54,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": null,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": null,
-  "Unnamed: 16": "352,0",
   "gold": {
     "gold": {
       "rank": 3380,

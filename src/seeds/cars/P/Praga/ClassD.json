@@ -8,9 +8,7 @@
   "stars": 4,
   "country": "Czech Republic",
   "epics": 4,
-  "obtainableVia": [
-    "Multiplayer"
-  ],
+  "obtainableVia": ["Multiplayer"],
   "added": "Winterfest",
   "addedWith": "DS",
   "addedDate": "12/12/2022",
@@ -18,13 +16,6 @@
   "blueprints2Star": 23,
   "blueprints3Star": 33,
   "blueprints4Star": 42,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": null,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": null,
-  "Unnamed: 16": "294,6",
   "gold": {
     "gold": {
       "rank": 2625,

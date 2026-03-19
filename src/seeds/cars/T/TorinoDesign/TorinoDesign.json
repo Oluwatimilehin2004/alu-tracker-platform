@@ -9,7 +9,7 @@
   "keyCar": true,
   "country": "Italy",
   "epics": 16,
-  "obtainableVia": null,
+  "obtainableVia": [],
   "added": "City of Lights",
   "addedWith": "SE",
   "addedDate": "06/02/2023",
@@ -19,13 +19,6 @@
   "blueprints4Star": 60,
   "blueprints5Star": 70,
   "blueprints6Star": 85,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": null,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": null,
-  "Unnamed: 16": "421,5",
   "gold": {
     "gold": {
       "rank": 4741,

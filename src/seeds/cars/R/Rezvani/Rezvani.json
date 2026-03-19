@@ -8,9 +8,7 @@
   "stars": 4,
   "country": "USA",
   "epics": 4,
-  "obtainableVia": [
-    "Exclusive"
-  ],
+  "obtainableVia": ["Exclusive"],
   "added": "Soft Launch",
   "addedWith": null,
   "addedDate": "26/02/2018",
@@ -18,13 +16,6 @@
   "blueprints2Star": 10,
   "blueprints3Star": 21,
   "blueprints4Star": 32,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": null,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": null,
-  "Unnamed: 16": "311,5",
   "gold": {
     "gold": {
       "rank": 2635,

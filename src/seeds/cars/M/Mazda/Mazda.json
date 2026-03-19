@@ -8,9 +8,7 @@
   "stars": 4,
   "country": "Japan",
   "epics": 4,
-  "obtainableVia": [
-    "GL06"
-  ],
+  "obtainableVia": ["Garage Level 6"],
   "added": "Godly Beasts",
   "addedWith": null,
   "addedDate": "10/12/2019",
@@ -18,13 +16,6 @@
   "blueprints2Star": 23,
   "blueprints3Star": 33,
   "blueprints4Star": 42,
-  "Total upgrade cost": null,
-  "Total GL points": null,
-  "Garage_Lvl": 6,
-  "Nitro_TS": null,
-  "Perfect_Nitro_TS": null,
-  "Tags": "Asia",
-  "Unnamed: 16": "317,7",
   "gold": {
     "gold": {
       "rank": 2853,
