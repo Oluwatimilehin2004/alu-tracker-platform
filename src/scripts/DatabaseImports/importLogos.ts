@@ -24,33 +24,51 @@ function* walk(dir: string): Generator<string> {
   }
 
   let uploaded = 0;
+  let updated = 0;
   let skipped = 0;
 
   for (const filePath of walk(root)) {
     const rel = path
       .relative(PUBLIC_DIR, filePath)
-      .replace(/\\/g, "/"); // e.g. images/logos/A/acura.png
+      .replace(/\\/g, "/");
 
-    const dest = rel; // keep same structure in bucket
-
+    const dest = rel;
     const fileRef = adminBucket.file(dest);
+    const localSize = fs.statSync(filePath).size;
+
     const [exists] = await fileRef.exists();
 
     if (exists) {
-      skipped++;
-      continue;
-    }
+      const [metadata] = await fileRef.getMetadata();
+      const remoteSize = Number(metadata.size);
 
-    await adminBucket.upload(filePath, { destination: dest });
-    console.log(`📤 Uploaded ${dest}`);
-    uploaded++;
+      if (remoteSize === localSize) {
+        skipped++;
+        continue;
+      }
+
+      // Size differs — re-upload
+      await adminBucket.upload(filePath, {
+        destination: dest,
+        metadata: { cacheControl: "public, max-age=31536000" },
+      });
+      console.log(`🔄 Updated  ${dest} (${remoteSize}B → ${localSize}B)`);
+      updated++;
+    } else {
+      await adminBucket.upload(filePath, {
+        destination: dest,
+        metadata: { cacheControl: "public, max-age=31536000" },
+      });
+      console.log(`📤 Uploaded ${dest}`);
+      uploaded++;
+    }
   }
 
   console.log(
-    `✅ Done (logos). Uploaded: ${uploaded}, skipped existing: ${skipped}`
+    `✅ Done. Uploaded: ${uploaded}, updated: ${updated}, skipped: ${skipped}`
   );
   process.exit(0);
 })().catch((err) => {
   console.error("❌ importLogos failed:", err);
-  process.exit(0);
+  process.exit(1);
 });
