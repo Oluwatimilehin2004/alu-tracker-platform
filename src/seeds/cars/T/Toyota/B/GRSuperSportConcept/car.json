@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "image": "/images/cars/T/Toyota/grsupersportconcept.jpg",
+  "class": "B",
+  "brand": "Toyota",
+  "model": "GR Super Sport Concept",
+  "normalizedKey": "toyota_gr_super_sport_concept",
+  "status": "in progress",
+  "message": "still adding data",
+  "sources": ["MEI", "My own in-game research"],
+  "rarity": "Epic",
+  "stars": 5,
+  "keyCar": true,
+  "country": "Japan",
+  "blueprints1Star": 0,
+  "blueprints2Star": 26,
+  "blueprints3Star": 34,
+  "blueprints4Star": 40,
+  "blueprints5Star": 62
+}
