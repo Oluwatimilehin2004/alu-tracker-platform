@@ -37,25 +37,29 @@ function starNumToName(n: number): string {
   return STAR_NAMES[n - 1];
 }
 
-function buildMaxStar(stars: number): Record<string, unknown> {
-  const statBlock = () => ({
-    rank: 0,
-    topSpeed: 0,
-    acceleration: 0,
-    handling: 0,
-    nitro: 0,
-  });
+function emptyStatBlock(): Record<string, number> {
+  return { rank: 0, topSpeed: 0, acceleration: 0, handling: 0, nitro: 0 };
+}
 
+function isStatBlock(val: unknown): val is Record<string, number> {
+  return (
+    val !== null &&
+    typeof val === 'object' &&
+    'rank' in (val as object)
+  );
+}
+
+function buildMaxStar(stars: number): Record<string, unknown> {
   if (stars === 3) {
     return {
-      oneStar: statBlock(),
-      twoStar: statBlock(),
+      oneStar: emptyStatBlock(),
+      twoStar: emptyStatBlock(),
     };
   }
 
   const result: Record<string, unknown> = {};
   for (let i = 1; i <= stars; i++) {
-    result[starNumToName(i)] = statBlock();
+    result[starNumToName(i)] = emptyStatBlock();
   }
   return result;
 }
@@ -168,7 +172,7 @@ function convertCar(oldJsonPath: string, dry: boolean): void {
   const raw = fs.readFileSync(oldJsonPath, 'utf8');
   const data = JSON.parse(raw);
 
-  const { brand, class: carClass, model, stars, normalizedKey } = data;
+  const { brand, class: carClass, model, stars } = data;
 
   if (!brand || !carClass || !model || !stars) {
     console.warn(`  ⚠ Skipping ${oldJsonPath} — missing required fields (brand, class, model, stars)`);
@@ -177,11 +181,8 @@ function convertCar(oldJsonPath: string, dry: boolean): void {
 
   const letterFolder = brand.replace(/\s/g, '')[0].toUpperCase();
   const brandFolder = brand.replace(/\s/g, '');
-
-  // Derive car folder name from the old file name
   const oldFileName = path.basename(oldJsonPath, '.json');
   const carFolder = oldFileName;
-
   const carDir = path.join(SEEDS_ROOT, letterFolder, brandFolder, carClass, carFolder);
   const alias = getAlias(letterFolder, brandFolder, carClass, carFolder);
 
@@ -194,13 +195,40 @@ function convertCar(oldJsonPath: string, dry: boolean): void {
     return;
   }
 
-  // Extract gold from old format if present
-  const goldData = data.gold?.gold
-    ? { gold: data.gold.gold }
-    : { gold: { rank: 0, topSpeed: 0, acceleration: 0, handling: 0, nitro: 0 } };
+  // ── Extract gold ─────────────────────────────────────────────────────────
+  // Old format: { gold: { gold: { rank, topSpeed, ... } } }
+  // Target:     { gold: { rank, topSpeed, ... } }
+  let goldInner: Record<string, number> | null = null;
+  if (isStatBlock(data.gold?.gold)) {
+    goldInner = data.gold.gold;
+  } else if (isStatBlock(data.gold)) {
+    goldInner = data.gold;
+  }
+  const goldData = { gold: goldInner ?? emptyStatBlock() };
 
-  // Strip gold from car.json fields
-  const { gold: _gold, ...carJson } = data;
+  // ── Extract stock ─────────────────────────────────────────────────────────
+  // Old format: { stock: { stock: { rank, topSpeed, ... } } }
+  // Target:     { stock: { rank, topSpeed, ... } }
+  let stockInner: Record<string, number> | null = null;
+  if (isStatBlock(data.stock?.stock)) {
+    stockInner = data.stock.stock;
+  } else if (isStatBlock(data.stock)) {
+    stockInner = data.stock;
+  }
+  const stockData = { stock: stockInner ?? emptyStatBlock() };
+
+  // ── Extract maxStar ───────────────────────────────────────────────────────
+  // Build full placeholder first, then overlay any existing star data on top
+  const maxStarPlaceholder = buildMaxStar(stars);
+  const existingMaxStar =
+    data.maxStar && typeof data.maxStar === 'object' && Object.keys(data.maxStar).length > 0
+      ? data.maxStar
+      : {};
+  const maxStarData = { ...maxStarPlaceholder, ...existingMaxStar };
+
+  // ── Strip extracted fields from car.json ──────────────────────────────────
+  const { gold: _gold, stock: _stock, maxStar: _maxStar, ...carJson } = data;
+
   if (!carJson.normalizedKey) {
     console.warn(`  ⚠ Warning: normalizedKey missing on ${oldJsonPath}`);
   }
@@ -238,8 +266,8 @@ function convertCar(oldJsonPath: string, dry: boolean): void {
 
   // ── stats root ───────────────────────────────────────────────────────────
   writeJson(path.join(carDir, 'stats', 'gold.json'), goldData);
-  writeJson(path.join(carDir, 'stats', 'stock.json'), { stock: { rank: 0, topSpeed: 0, acceleration: 0, handling: 0, nitro: 0 } });
-  writeJson(path.join(carDir, 'stats', 'maxStar.json'), buildMaxStar(stars));
+  writeJson(path.join(carDir, 'stats', 'stock.json'), stockData);
+  writeJson(path.join(carDir, 'stats', 'maxStar.json'), maxStarData);
   writeTs(path.join(carDir, 'stats', 'index.ts'), buildStatsIndexTs(alias));
 
   // ── upgrades/imports ─────────────────────────────────────────────────────
@@ -306,9 +334,9 @@ const letterArg = getArg('letter');
 
 if (!keysArg && !brandArg && !letterArg) {
   console.error('❌ Provide at least one filter:');
-  console.error('   --keys=normalizedKey1,normalizedKey2');
-  console.error('   --brand=Koenigsegg');
-  console.error('   --letter=K');
+  console.error('   --keys=<normalizedKey1,normalizedKey2>');
+  console.error('   --brand=<BrandName>');
+  console.error('   --letter=<A-Z>');
   console.error('   --dry  (add to any command to preview without writing files)');
   process.exit(1);
 }
