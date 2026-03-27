@@ -8,9 +8,7 @@
   "stars": 5,
   "country": "Italy",
   "epics": 12,
-  "obtainableVia": [
-    "GL12"
-  ],
+  "obtainableVia": ["GL12"],
   "added": "Soft Launch",
   "addedWith": null,
   "addedDate": "26/02/2018",

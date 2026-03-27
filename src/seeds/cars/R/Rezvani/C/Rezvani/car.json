@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "image": "/images/cars/R/Rezvani/beastx.jpg",
+  "class": "C",
+  "brand": "Rezvani",
+  "model": "Beast X",
+  "rarity": "Rare",
+  "stars": 4,
+  "country": "USA",
+  "epics": 4,
+  "obtainableVia": [
+    "Exclusive"
+  ],
+  "added": "Soft Launch",
+  "addedWith": null,
+  "addedDate": "26/02/2018",
+  "blueprints1Star": 35,
+  "blueprints2Star": 10,
+  "blueprints3Star": 21,
+  "blueprints4Star": 32
+}

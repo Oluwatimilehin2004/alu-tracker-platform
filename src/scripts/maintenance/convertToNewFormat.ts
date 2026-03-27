@@ -78,6 +78,13 @@ function getAlias(letterFolder: string, brand: string, carClass: string, carFold
   return `@/seeds/cars/${letterFolder}/${brand}/${carClass}/${carFolder}`;
 }
 
+function isAlreadyConverted(flatJsonPath: string): boolean {
+  const dir = path.dirname(flatJsonPath);
+  const baseName = path.basename(flatJsonPath, '.json');
+  const convertedCarJson = path.join(dir, baseName, 'car.json');
+  return fs.existsSync(convertedCarJson);
+}
+
 function buildDeltasImportsIndexTs(alias: string, stars: number): string {
   const lines: string[] = [];
   for (let i = 1; i <= stars; i++) {
@@ -195,7 +202,7 @@ function convertCar(oldJsonPath: string, dry: boolean): void {
     return;
   }
 
-  // ── Extract gold ─────────────────────────────────────────────────────────
+  // ── Extract gold ──────────────────────────────────────────────────────────
   // Old format: { gold: { gold: { rank, topSpeed, ... } } }
   // Target:     { gold: { rank, topSpeed, ... } }
   let goldInner: Record<string, number> | null = null;
@@ -233,56 +240,56 @@ function convertCar(oldJsonPath: string, dry: boolean): void {
     console.warn(`  ⚠ Warning: normalizedKey missing on ${oldJsonPath}`);
   }
 
-  // ── Directories ──────────────────────────────────────────────────────────
+  // ── Directories ───────────────────────────────────────────────────────────
   ensureDir(carDir);
   ensureDir(path.join(carDir, 'deltas', 'imports'));
   ensureDir(path.join(carDir, 'deltas', 'stages'));
   ensureDir(path.join(carDir, 'stats', 'stages'));
   ensureDir(path.join(carDir, 'upgrades', 'imports'));
 
-  // ── car.json ─────────────────────────────────────────────────────────────
+  // ── car.json ──────────────────────────────────────────────────────────────
   writeJson(path.join(carDir, 'car.json'), carJson);
 
-  // ── deltas/imports ───────────────────────────────────────────────────────
+  // ── deltas/imports ────────────────────────────────────────────────────────
   for (let i = 1; i <= stars; i++) {
     writeJson(path.join(carDir, 'deltas', 'imports', `${i}star.json`), []);
   }
   writeTs(path.join(carDir, 'deltas', 'imports', 'index.ts'), buildDeltasImportsIndexTs(alias, stars));
 
-  // ── deltas/stages ────────────────────────────────────────────────────────
+  // ── deltas/stages ─────────────────────────────────────────────────────────
   for (let i = 1; i <= stars; i++) {
     writeJson(path.join(carDir, 'deltas', 'stages', `${i}star.json`), []);
   }
   writeTs(path.join(carDir, 'deltas', 'stages', 'index.ts'), buildDeltasStagesIndexTs(alias, stars));
 
-  // ── deltas/index.ts ──────────────────────────────────────────────────────
+  // ── deltas/index.ts ───────────────────────────────────────────────────────
   writeTs(path.join(carDir, 'deltas', 'index.ts'), buildDeltasIndexTs(alias));
 
-  // ── stats/stages ─────────────────────────────────────────────────────────
+  // ── stats/stages ──────────────────────────────────────────────────────────
   for (let i = 1; i <= stars; i++) {
     writeJson(path.join(carDir, 'stats', 'stages', `${i}star.json`), []);
   }
   writeTs(path.join(carDir, 'stats', 'stages', 'index.ts'), buildStatsStagesIndexTs(alias, stars));
 
-  // ── stats root ───────────────────────────────────────────────────────────
+  // ── stats root ────────────────────────────────────────────────────────────
   writeJson(path.join(carDir, 'stats', 'gold.json'), goldData);
   writeJson(path.join(carDir, 'stats', 'stock.json'), stockData);
   writeJson(path.join(carDir, 'stats', 'maxStar.json'), maxStarData);
   writeTs(path.join(carDir, 'stats', 'index.ts'), buildStatsIndexTs(alias));
 
-  // ── upgrades/imports ─────────────────────────────────────────────────────
+  // ── upgrades/imports ──────────────────────────────────────────────────────
   writeJson(path.join(carDir, 'upgrades', 'imports', 'costs.json'), { perCardByStage: {} });
   writeJson(path.join(carDir, 'upgrades', 'imports', 'garageLevelXp.json'), { perCardByStage: {} });
   writeJson(path.join(carDir, 'upgrades', 'imports', 'requirements.json'), { incrementalByStage: {} });
   writeTs(path.join(carDir, 'upgrades', 'imports', 'index.ts'), buildUpgradesImportsIndexTs(alias));
 
-  // ── upgrades root ────────────────────────────────────────────────────────
+  // ── upgrades root ─────────────────────────────────────────────────────────
   writeJson(path.join(carDir, 'upgrades', 'creditCosts.json'), { perUpgradeByStage: {} });
   writeJson(path.join(carDir, 'upgrades', 'garageLevelXp.json'), { perUpgradeByStage: {} });
   writeJson(path.join(carDir, 'upgrades', 'progression.json'), { starStageCaps: buildProgressionCaps(stars) });
   writeTs(path.join(carDir, 'upgrades', 'index.ts'), buildUpgradesIndexTs(alias));
 
-  // ── root index.ts ────────────────────────────────────────────────────────
+  // ── root index.ts ─────────────────────────────────────────────────────────
   writeTs(path.join(carDir, 'index.ts'), buildRootIndexTs(alias));
 
   console.log(`   ✅ Done — ${stars} star car, created all folders and files`);
@@ -303,6 +310,7 @@ function findCarJsonFiles(filterFn: (filePath: string, data: any) => boolean): s
       if (entry.isDirectory()) {
         walk(fullPath);
       } else if (entry.isFile() && entry.name.endsWith('.json') && entry.name !== 'car.json') {
+        if (isAlreadyConverted(fullPath)) continue;
         try {
           const data = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
           if (
@@ -325,7 +333,7 @@ function findCarJsonFiles(filterFn: (filePath: string, data: any) => boolean): s
   return results;
 }
 
-// ── Main ─────────────────────────────────────────────────────────────────────
+// ── Main ──────────────────────────────────────────────────────────────────────
 
 const dry = hasFlag('dry');
 const keysArg = getArg('keys');

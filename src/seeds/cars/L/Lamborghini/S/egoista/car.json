@@ -1,0 +1,24 @@
+{
+  "id": 3,
+  "image": "/images/cars/L/Lamborghini/egoista.jpg",
+  "class": "S",
+  "brand": "Lamborghini",
+  "model": "Egoista",
+  "rarity": "Epic",
+  "stars": 6,
+  "country": "Italy",
+  "epics": 16,
+  "obtainableVia": [
+    "Exclusive"
+  ],
+  "added": "Soft Launch",
+  "addedWith": null,
+  "addedDate": "26/02/2018",
+  "blueprints1Star": 60,
+  "blueprints2Star": 13,
+  "blueprints3Star": 16,
+  "blueprints4Star": 25,
+  "blueprints5Star": 38,
+  "blueprints6Star": 48,
+  "Tags": "Electric; Europe; Hyper"
+}

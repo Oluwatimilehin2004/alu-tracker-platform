@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "image": "/images/cars/N/Nissan/zgt4.jpg",
+  "class": "C",
+  "brand": "Nissan",
+  "model": "Z GT4",
+  "rarity": "Epic",
+  "stars": 5,
+  "country": "Japan"
+}

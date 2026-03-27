@@ -28,7 +28,7 @@
       {
         "brand": "Aston Martin",
         "model": "Valhalla Concept Car",
-        "image": "/images/cars/A/AstonMartin/valhallaconceptcar.jpg"
+        "image": "/images/cars/A/AstonMartin/valhallaconceptcar.webp"
       }
     ]
   },
@@ -39,7 +39,7 @@
       {
         "brand": "Automobili Pininfarina",
         "model": "Battista",
-        "image": "/images/cars/A/AutomobiliPininfarina/battista.jpg"
+        "image": "/images/cars/A/AutomobiliPininfarina/battista.webp"
       }
     ]
   },
@@ -50,7 +50,7 @@
       {
         "brand": "Aston Martin",
         "model": "Valkyrie",
-        "image": "/images/cars/A/AstonMartin/valkyrie.jpg"
+        "image": "/images/cars/A/AstonMartin/valkyrie.webp"
       }
     ]
   }

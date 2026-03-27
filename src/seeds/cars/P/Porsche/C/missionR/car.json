@@ -1,0 +1,22 @@
+{
+  "id": 2,
+  "image": "/images/cars/P/Porsche/missionr.jpg",
+  "class": "C",
+  "brand": "Porsche",
+  "model": "Mission R",
+  "rarity": "Rare",
+  "stars": 4,
+  "country": "Germany",
+  "epics": 4,
+  "obtainableVia": null,
+  "added": "Unite Update",
+  "addedWith": "DS",
+  "addedDate": "16/7/2024",
+  "blueprints1Star": 50,
+  "blueprints2Star": 29,
+  "blueprints3Star": 38,
+  "blueprints4Star": 48,
+  "Garage_Lvl": null,
+  "Nitro_TS": null,
+  "Tags": null
+}
