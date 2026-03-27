@@ -15,6 +15,38 @@ const results = {
   missingKey: [] as MissingEntry[],
 };
 
+// Build a set of all brand+model combos that already have a converted car.json
+function buildConvertedSet(): Set<string> {
+  const converted = new Set<string>();
+
+  function walk(dir: string): void {
+    let entries;
+    try {
+      entries = fs.readdirSync(dir, { withFileTypes: true });
+    } catch {
+      return;
+    }
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        walk(fullPath);
+      } else if (entry.isFile() && entry.name === 'car.json') {
+        try {
+          const data = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+          if (data.brand && data.model) {
+            converted.add(`${data.brand}::${data.model}`);
+          }
+        } catch {
+          // skip
+        }
+      }
+    }
+  }
+
+  walk(SEEDS_ROOT);
+  return converted;
+}
+
 function isCarJson(filePath: string): boolean {
   try {
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -29,7 +61,7 @@ function isCarJson(filePath: string): boolean {
   }
 }
 
-function walk(currentDir: string): void {
+function walk(currentDir: string, convertedSet: Set<string>): void {
   let entries;
   try {
     entries = fs.readdirSync(currentDir, { withFileTypes: true });
@@ -41,10 +73,21 @@ function walk(currentDir: string): void {
     const fullPath = path.join(currentDir, entry.name);
 
     if (entry.isDirectory()) {
-      walk(fullPath);
+      walk(fullPath, convertedSet);
     } else if (entry.isFile() && entry.name.endsWith('.json')) {
       const isNewFormat = entry.name === 'car.json';
       const isOldFormat = !isNewFormat && isCarJson(fullPath);
+
+      if (isOldFormat) {
+        try {
+          const data = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+          const key = `${data.brand}::${data.model}`;
+          // Skip old flat .json if a converted car.json already exists for this brand+model
+          if (convertedSet.has(key)) continue;
+        } catch {
+          continue;
+        }
+      }
 
       if (isNewFormat || isOldFormat) {
         try {
@@ -74,7 +117,9 @@ if (!fs.existsSync(SEEDS_ROOT)) {
 }
 
 console.log(`\nScanning: ${SEEDS_ROOT}\n`);
-walk(SEEDS_ROOT);
+
+const convertedSet = buildConvertedSet();
+walk(SEEDS_ROOT, convertedSet);
 
 if (results.missingKey.length === 0) {
   console.log('✅  All car files have a normalizedKey!');

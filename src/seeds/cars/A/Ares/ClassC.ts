@@ -1,3 +1,3 @@
-import s1 from '@/seeds/cars/A/Ares/C/s1.json';
+import s1 from '@/seeds/cars/A/Ares/C/S1';
 
 export default [s1];

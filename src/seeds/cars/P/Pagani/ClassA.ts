@@ -1,4 +1,4 @@
-import huayraBC from '@/seeds/cars/P/Pagani/A/huayraBC.json';
+import huayraBC from '@/seeds/cars/P/Pagani/A/HuayraBC';
 import imola from '@/seeds/cars/P/Pagani/A/imola.json';
 import utopiaCoupe from '@/seeds/cars/P/Pagani/A/utopiaCoupe.json';
 import zondaHPBarchetta from '@/seeds/cars/P/Pagani/A/zondaHPBarchetta.json';

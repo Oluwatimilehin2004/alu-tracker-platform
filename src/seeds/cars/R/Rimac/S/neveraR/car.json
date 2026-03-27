@@ -1,0 +1,19 @@
+{
+  "id": 4,
+  "image": "/images/cars/R/Rimac/neverar.jpg",
+  "class": "S",
+  "brand": "Rimac",
+  "model": "Nevera R",
+  "normalizedKey": "rimac_nevera_r",
+  "status": "in progress",
+  "message": "still adding and missing data",
+  "rarity": "Epic",
+  "stars": 6,
+  "keyCar": true,
+  "country": "Croatia",
+  "obtainableVia": [
+    ""
+  ],
+  "blueprints1Star": 0,
+  "blueprints2Star": 45
+}

@@ -6,12 +6,12 @@
       {
         "brand": "Lamborghini",
         "model": "Centenario",
-        "image": "/images/cars/L/Lamborghini/centenario.jpg"
+        "image": "/images/cars/L/Lamborghini/centenario.webp"
       },
       {
         "brand": "Maserati",
         "model": "Alfieri",
-        "image": "/images/cars/M/Maserati/alfieri.jpg"
+        "image": "/images/cars/M/Maserati/alfieri.webp"
       },
       {
         "brand": "Vencer",
@@ -27,17 +27,17 @@
       {
         "brand": "Ferrari",
         "model": "FXX K",
-        "image": "/images/cars/F/Ferrari/fxxk.jpg"
+        "image": "/images/cars/F/Ferrari/fxxk.webp"
       },
       {
         "brand": "Lamborghini",
         "model": "Aventador SV Coupe",
-        "image": "/images/cars/L/Lamborghini/aventadorsvcoupe.jpg"
+        "image": "/images/cars/L/Lamborghini/aventadorsvcoupe.webp"
       },
       {
         "brand": "McLaren",
         "model": "P1",
-        "image": "/images/cars/M/McLaren/p1.jpg"
+        "image": "/images/cars/M/McLaren/p1.webp"
       }
     ]
   },
@@ -48,7 +48,7 @@
       {
         "brand": "Chevrolet",
         "model": "Corvette Grand Sport",
-        "image": "/images/cars/C/Chevrolet/corvettegrandsport.jpg"
+        "image": "/images/cars/C/Chevrolet/corvettegrandsport.webp"
       },
       {
         "brand": "Ferrari",

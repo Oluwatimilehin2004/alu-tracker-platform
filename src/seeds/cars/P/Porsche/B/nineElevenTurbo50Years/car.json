@@ -1,0 +1,10 @@
+{
+  "id": 5,
+  "image": "/images/cars/P/Porsche/911turbo50years.jpg",
+  "class": "B",
+  "brand": "Porsche",
+  "model": "911 Turbo 50 Years",
+  "rarity": "Rare",
+  "stars": 4,
+  "country": "Germany"
+}

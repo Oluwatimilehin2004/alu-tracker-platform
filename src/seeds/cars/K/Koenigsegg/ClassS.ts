@@ -1,4 +1,4 @@
-import regera from "@/seeds/cars/K/Koenigsegg/S/regera.json";
+import regera from "@/seeds/cars/K/Koenigsegg/S/Regera";
 import jesko from "@/seeds/cars/K/Koenigsegg/S/jesko.json";
 import jeskoAbsolut from "@/seeds/cars/K/Koenigsegg/S/jeskoAbsolut.json";
 import cc850 from "@/seeds/cars/K/Koenigsegg/S/cc850.json";

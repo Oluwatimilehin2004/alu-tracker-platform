@@ -1,5 +1,5 @@
 import f8Tributo from '@/seeds/cars/F/Ferrari/A/f8Tributo.json';
-import laFerrari from '@/seeds/cars/F/Ferrari/A/laFerrari.json';
+import laFerrari from '@/seeds/cars/F/Ferrari/A/LaFerrari';
 import eightTwelveSuperfast from '@/seeds/cars/F/Ferrari/A/812Superfast';
 import sf90XxStradale from '@/seeds/cars/F/Ferrari/A/sf90XxStradale.json';
 import laFerrariAperta from '@/seeds/cars/F/Ferrari/A/laFerrariAperta.json';

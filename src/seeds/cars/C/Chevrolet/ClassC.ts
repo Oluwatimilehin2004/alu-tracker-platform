@@ -1,4 +1,4 @@
-import camaroZl150thEdition from '@/seeds/cars/C/Chevrolet/C/camaroZl150thEdition.json';
-import corvetteStingray from '@/seeds/cars/C/Chevrolet/C/corvetteStingray.json';
+import camaroZl150thEdition from '@/seeds/cars/C/Chevrolet/C/CamaroZl150thEdition';
+import corvetteStingray from '@/seeds/cars/C/Chevrolet/C/CorvetteStingray';
 
 export default [camaroZl150thEdition, corvetteStingray]

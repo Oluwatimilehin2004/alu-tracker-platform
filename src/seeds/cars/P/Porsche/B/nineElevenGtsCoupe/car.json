@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "image": "/images/cars/P/Porsche/911gtscoupe.jpg",
+  "class": "B",
+  "brand": "Porsche",
+  "model": "911 GTS Coupé",
+  "rarity": "Uncommon",
+  "stars": 3,
+  "country": "Germany",
+  "epics": 4,
+  "obtainableVia": [
+    "GL04"
+  ],
+  "added": "Soft Launch",
+  "addedWith": null,
+  "addedDate": "26/02/2018",
+  "blueprints1Star": 30,
+  "blueprints2Star": 30,
+  "blueprints3Star": 70,
+  "Garage_Lvl": 4,
+  "Tags": "Europe; Super Car"
+}

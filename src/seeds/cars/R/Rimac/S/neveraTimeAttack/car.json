@@ -1,0 +1,21 @@
+{
+  "id": 3,
+  "image": "/images/cars/R/Rimac/neveratimeattack.jpg",
+  "class": "S",
+  "brand": "Rimac",
+  "model": "Nevera Time Attack",
+  "normalizedKey": "rimac_nevera_time_attack",
+  "status": "in progress",
+  "message": "still adding data",
+  "rarity": "Epic",
+  "stars": 6,
+  "keyCar": true,
+  "country": "Croatia",
+  "epics": 16,
+  "blueprints1Star": 0,
+  "blueprints2Star": 40,
+  "blueprints3Star": 45,
+  "blueprints4Star": 60,
+  "blueprints5Star": 70,
+  "blueprints6Star": 85
+}

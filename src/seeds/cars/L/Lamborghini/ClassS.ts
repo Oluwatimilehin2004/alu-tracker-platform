@@ -3,6 +3,6 @@ import terzoMillennio from '@/seeds/cars/L/Lamborghini/S/terzoMillennio.json';
 import egoista from '@/seeds/cars/L/Lamborghini/S/egoista.json';
 import veneno from '@/seeds/cars/L/Lamborghini/S/veneno.json';
 import autentica from '@/seeds/cars/L/Lamborghini/S/autentica.json';
-import centenario from '@/seeds/cars/L/Lamborghini/S/centenario.json';
+import centenario from '@/seeds/cars/L/Lamborghini/S/Centenario';
 
 export default [sianFKP37, terzoMillennio, egoista, veneno, autentica, centenario];

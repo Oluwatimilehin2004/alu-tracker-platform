@@ -43,7 +43,7 @@
       {
         "brand": "Vanda Electrics",
         "model": "Dendrobium",
-        "image": "/images/cars/V/VandaElectrics/dendrobium.jpg"
+        "image": "/images/cars/V/VandaElectrics/dendrobium.webp"
       }
     ]
   },
@@ -54,12 +54,12 @@
       {
         "brand": "Koenigsegg",
         "model": "Regera",
-        "image": "/images/cars/K/Koenigsegg/regera.jpg"
+        "image": "/images/cars/K/Koenigsegg/regera.webp"
       },
       {
         "brand": "Lamborghini",
         "model": "Huracan Evo Spyder",
-        "image": "/images/cars/L/Lamborghini/huracanevospyder.jpg"
+        "image": "/images/cars/L/Lamborghini/huracanevospyder.webp"
       }
     ]
   },
@@ -70,7 +70,7 @@
       {
         "brand": "Pagani",
         "model": "Huayra BC",
-        "image": "/images/cars/P/Pagani/huayrabc.jpg"
+        "image": "/images/cars/P/Pagani/huayrabc.webp"
       },
       {
         "brand": "Ferrari",
@@ -86,12 +86,12 @@
       {
         "brand": "Bugatti",
         "model": "Chiron",
-        "image": "/images/cars/B/Bugatti/chiron.jpg"
+        "image": "/images/cars/B/Bugatti/chiron.webp"
       },
       {
         "brand": "Genty",
         "model": "Akylone",
-        "image": "/images/cars/G/Genty/akylone.jpg"
+        "image": "/images/cars/G/Genty/akylone.webp"
       }
     ]
   }

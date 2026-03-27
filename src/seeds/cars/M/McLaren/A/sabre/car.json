@@ -1,0 +1,13 @@
+{
+  "id": 5,
+  "image": "/images/cars/M/McLaren/sabre.jpg",
+  "class": "A",
+  "brand": "McLaren",
+  "model": "Sabre",
+  "rarity": "Epic",
+  "stars": 6,
+  "country": "UK",
+  "obtainableVia": [
+    "Daily Events"
+  ]
+}

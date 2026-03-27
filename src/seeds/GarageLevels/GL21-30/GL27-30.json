@@ -27,7 +27,7 @@
       {
         "brand": "Apex",
         "model": "AP-0",
-        "image": "/images/cars/A/Apex/ap0.jpg"
+        "image": "/images/cars/A/Apex/ap0.webp"
       }
     ]
   },
@@ -54,12 +54,12 @@
       {
         "brand": "Porsche",
         "model": "911 GT3 RS",
-        "image": "/images/cars/P/Porsche/911gt3rs.jpg"
+        "image": "/images/cars/P/Porsche/911gt3rs.webp"
       },
       {
         "brand": "Nissan",
         "model": "GTR-50 Italdesign",
-        "image": "/images/cars/N/Nissan/gtr50italdesign.jpg"
+        "image": "/images/cars/N/Nissan/gtr50italdesign.webp"
       }
     ]
   }
