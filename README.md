@@ -95,3 +95,6 @@ Some friends also provided me with missing car images.
 
 - For issues, please use this repo’s **GitHub Issues** tab.  
 - Friends from the community also provided some missing car images.  
+---
+## 📦 Imported from [https://github.com/JHebenstreit48/alu-tracker-platform](https://github.com/JHebenstreit48/alu-tracker-platform)
+*Imported using ForkYouToo - Learn, Adapt, Build*
